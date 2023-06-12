@@ -11,10 +11,10 @@ public class AdvertModel {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    @Column(name = "name")
+    @Column
     private String name;
 
-    @Column(name = "price")
+    @Column
     private int price;
 
     @Column
@@ -22,6 +22,9 @@ public class AdvertModel {
 
     @Column
     private String disc;
+
+    @Column
+    private String size;
 
 
 

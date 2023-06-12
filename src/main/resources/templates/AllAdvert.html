@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-bs-theme="auto">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <script src="../assets/js/color-modes.js"></script>
 
@@ -122,5 +122,14 @@
     </div>
 </header>
 
+<div class="container">
+            <div th:each="el : ${allAdverts}" class="alert alert-info m2">
+                <h3 th:text="${el.getName()}"></h3>
+                <p th:text="${el.getWeight()}"></p>
+                <p th:text="${el.getPrice()}"></p>
+                <p th:text="${el.getDisc()}"></p>
+                <p th:text="${el.getSize()}"></p>
+            </div>
+        </div>
 </body>
 </html>
